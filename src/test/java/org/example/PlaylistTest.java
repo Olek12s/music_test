@@ -29,6 +29,13 @@ class PlaylistTest
         assertEquals(s, pl.get(0));
     }
 
-    
+    @Test
+    public void testIfAddedSongIsTheSame2()
+    {
+        Playlist pl = new Playlist();
+        Song s = new Song(50, "Krawczcyk", "Mój przyjacielu", 700);
+        pl.add(s);
+        assertTrue(pl.size() == 1);
+    }
 
 }
